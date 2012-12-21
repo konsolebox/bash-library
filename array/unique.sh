@@ -2,8 +2,8 @@
 #
 # Provides array_unique().
 #
-# author: konsolebox
-# copyright free, 2010-2012
+# Author: konsolebox
+# Copyright free, 2010-2012
 #
 
 
