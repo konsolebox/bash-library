@@ -1,9 +1,9 @@
 # array/unique.sh
 #
-# provides array_unique()
+# Provides array_unique().
 #
 # author: konsolebox
-# copyright free, 2010
+# copyright free, 2010-2012
 #
 
 
@@ -47,10 +47,10 @@ if [[ BASH_VERSINFO -ge 4 ]]; then
 				done
 			"
 			;;
-	#		*)
-	#			echo "invalid number of arguments."
-	#			exit 1
-	#			;;
+#		*)
+#			echo "invalid number of arguments."
+#			exit 1
+#			;;
 		esac
 	}
 else
