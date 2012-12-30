@@ -47,27 +47,24 @@ if [[ BASH_VERSINFO -ge 4 ]]; then
 				done
 			"
 			;;
-#		*)
-#			echo "invalid number of arguments."
-#			exit 1
-#			;;
+		#*)
+		#	echo "Invalid number of arguments."
+		#	exit 1
+		#	;;
 		esac
 	}
 else
-	# Note: At first I thought that a method like the one presented by the
-	#       second version will yield faster result since it doesn't
-	#       reallocate the indices everytime a repeating line is removed.
-	#       That could have been the case but as tests shows, the first
-	#       version yielded faster performance in most cases.  The second
-	#       version is only faster when there are -very- many similarities
-	#       in many lines.
+	# At first I thought that a method like the one presented by the
+	# second version will yield faster result since it doesn't reallocate
+	# the indices everytime a repeating line is removed.  That could have
+	# been the case but as tests shows, the first version yielded faster
+	# performance in most cases.  The second version is only faster when
+	# there are -very- many similarities in many lines.
 	#
-	#       It appears that the overhead of having manier instructions is
-	#       greater than the overhead of recollecting indices.  The second
-	#       version could be just faster if its lines can be reduced.  It
-	#       can perhaps also be faster if implemented in languages other
-	#       than bash.
-	#
+	# It appears that the overhead of having manier instructions is greater
+	# than the overhead of recollecting indices.  The second version could
+	# be just faster if its lines can be reduced.  It can perhaps also be
+	# faster if implemented in languages other than Bash.
 
 	if true; then
 		function array_unique {
@@ -113,10 +110,10 @@ else
 					return 0
 				"
 				;;
-#			*)
-#				echo "invalid number of arguments."
-#				exit 1
-#				;;
+			#*)
+			#	echo "Invalid number of arguments."
+			#	exit 1
+			#	;;
 			esac
 			return 1
 		}
@@ -159,10 +156,10 @@ else
 					return 0
 				"
 				;;
-#			*)
-#				echo "invalid number of arguments."
-#				exit 1
-#				;;
+			#*)
+			#	echo "Invalid number of arguments."
+			#	exit 1
+			#	;;
 			esac
 			return 1
 		}
