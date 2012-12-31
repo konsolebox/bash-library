@@ -20,20 +20,20 @@
 # array_isempty(), array_isnotempty(),
 # array_size(), array_length()
 #
-# This script requires bash versions 3.0 or newer.
+# This script requires Bash version 3.0 or newer.
 #
 # Author: konsolebox
 # Copyright Free / Public Domain
 # June 30, 2010
 #
-# Last Updated: 2012/09/08
+# Last Updated: 2012/12/31
 # Version: 0.2.2.2
 
 # ----------------------------------------------------------------------
 
 
 if ! [[ BASH_VERSINFO -ge 3 ]]; then
-	echo "array.sh: This script requires bash version 3.0 or newer."
+	echo "array.sh: This script requires Bash version 3.0 or newer."
 	exit 1
 fi
 
